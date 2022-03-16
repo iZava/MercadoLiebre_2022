@@ -1,0 +1,312 @@
+:root {
+  --color-amarillo-meli: #eac926;
+  --color-azul-proyecto: #03264c;
+  --color-celeste-proyecto: #1259c3;
+  --color-gris-oscuro-proyecto: #666;
+  --color-gris-claro-proyecto: #ebebeb;
+  --color-verde-proyecto: #39b54a;
+}
+
+/* Estilos generales */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-gris-claro-proyecto);
+}
+
+h3 {
+  font-size: 24px;
+  margin: 20px 0px;
+  color: var(--color-gris-oscuro-proyecto)
+}
+
+h4 {
+  font-size: 18px;
+  color: var(--color-gris-oscuro-proyecto);
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Estilos particulares */
+
+/*? ================HEADER================= */
+
+
+header {
+  background-color: var(--color-amarillo-meli);
+  padding: 15px;
+}
+
+header .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+header .header-container p {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  color: var(--color-gris-oscuro-proyecto);
+}
+
+header .logo-meli {
+  width: 70%;
+  padding: 10px;
+}
+
+header .barra-busqueda {
+  width: 50%;
+  align-items: center;
+  font-size: 14px;
+  border: solid 1px var(--color-gris-oscuro-proyecto);
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+}
+
+nav .lista-1, .lista-2{
+  display:none;
+}
+
+
+header nav {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color-gris-oscuro-proyecto);
+}
+.burguer-menu {
+  text-align: center;
+  padding: 15px;
+}
+.burguer-menu i {
+  padding: 8px;
+  background-color: var(--color-celeste-proyecto);
+  border-radius: 5px;
+  margin: auto 0;
+  display: inline;
+}
+
+.burguer-menu i:hover {
+  background-color: darkblue;
+}
+
+.form-01{
+    padding: 20px 15px
+  }
+  
+  .control-formulario{
+    margin-bottom: 20px;
+  }
+  
+  .control-formulario label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: block;
+    color:var(--color-gris-oscuro-proyecto)
+  }
+  
+  .form-levels {
+    width: 80%;
+    padding: 10px 10px;
+    border-radius:10px;
+    border: 2px solid lightgrey;
+  }
+  
+  .form-button{
+    background-color:var(--color-celeste-proyecto);
+    color:white;
+    font-size: 20px;
+    border-radius:5px;
+    border: none;
+    padding: 5px 5px
+  
+  }
+  
+  .select-form {
+    
+    padding: 10px 10px;
+    border-radius:10px;
+    border: 2px solid lightgrey;
+    color:var(--color-gris-oscuro-proyecto);
+    font-size: 18px;
+  }
+  
+  
+  
+
+
+  
+/*? ================FOOTER================= */
+
+footer {
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 100%;
+  margin: auto
+}
+
+footer .footer-container{
+  max-width: 100%;
+}
+
+
+footer .footer-container .pagos-footer{
+  padding: 15px
+}
+footer .footer-container .seguridad-footer{
+  padding: 15px
+}
+footer .footer-container .envios-footer{
+  padding: 15px
+}
+
+
+.tarjeta {
+  color: var(--color-celeste-proyecto);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.send {
+  color: var(--color-celeste-proyecto);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.security {
+  color: var(--color-celeste-proyecto);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text1{
+  font-weight: bold; 
+  font-size: 16px;
+  padding: 0px 15px 15px 15px;
+  color: var(--color-gris-oscuro-proyecto)
+
+}
+
+.text2{
+font-size: 14px;
+color: var(--color-gris-oscuro-proyecto);
+padding-bottom: 15px;
+}
+
+
+/*? ================COPY================= */
+
+
+.copyright{
+  width: 100%;
+  padding: 30px;
+  background-color: var(--color-amarillo-meli);
+  text-align: center;
+  
+}
+
+
+.copy-text, a{
+  color: var(--color-gris-oscuro-proyecto);
+  text-decoration: none;
+  
+}
+
+.copy-text a{
+  font-weight: bold; 
+}
+
+
+
+
+/*? ================MEDIA================= */
+
+@media (min-width: 361px){
+
+  nav .lista-1, .lista-2{
+    display: none;
+  }
+
+  main .detalle-prod{
+      display: block;
+  }
+
+  main .producto{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      
+  }
+
+  main section div.lista-productos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  
+  main .lista-productos .producto{
+      width: 45%;
+  }
+
+  .precio,
+  .off{
+      width: 50%;
+  }
+  
+}
+
+@media (min-width: 769px){
+
+  nav .lista-1, .lista-2{
+    display: block;
+  }
+
+  .burguer-menu{
+    display:none;
+  }
+
+  main .lista-productos .producto{
+      width: 22%;
+  }
+  .detalle-prod{
+      display:flex;
+      opacity: 0;
+      transition: all 0.5s;
+  }
+  .detalle-prod:hover{
+      opacity: 1;
+  }
+  main section article{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      transition: all 1s
+      
+  }
+  main section article:hover{
+      box-shadow: 0px 0px 30px rgb(100, 100, 100);
+      
+  }
+  
+  footer .footer-container {
+    display: flex;
+    align-items:center;
+  }
+}
