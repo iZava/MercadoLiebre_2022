@@ -63,7 +63,8 @@ header {
 }
 
 header div.logo {
-  width: 25%;
+  width: 15%;
+  margin-left: 15px;
 }
 
 header .form {
@@ -357,7 +358,7 @@ footer .footer-container .envios-footer {
       width: 100%;
   }
   header div.logo {
-      width: 50%;
+      width: 40%;
       margin: 0;
   }
   header .form {

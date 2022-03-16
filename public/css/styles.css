@@ -23,7 +23,7 @@ body {
 h3 {
   font-size: 24px;
   margin: 20px 0px;
-  color: var(--color-gris-oscuro-proyecto)
+  color: var(--color-gris-oscuro-proyecto);
 }
 
 h4 {
@@ -63,7 +63,8 @@ header {
 }
 
 header div.logo {
-  width: 25%;
+  width: 15%;
+  margin-left: 15px;
 }
 
 header .form {
@@ -102,7 +103,7 @@ header .form .input {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 header .fa-search {
@@ -141,14 +142,12 @@ div.burger-menu i {
   margin: 10px 0px 20px 0px;
   padding: 10px;
   width: 40px;
-  transition: background-color 0.5s
+  transition: background-color 0.5s;
 }
 
-div.burger-menu i:hover{
-    background-color: var(--color-azul-proyecto)
-  }
-
-
+div.burger-menu i:hover {
+  background-color: var(--color-azul-proyecto);
+}
 
 .banner img {
   width: 100%;
@@ -174,11 +173,11 @@ article .img_ {
 .descripcion {
   background-color: #ffffff;
   width: 100%;
-  
+
   padding: 10px;
 }
 
-.producto{
+.producto {
   margin-bottom: 20px;
 }
 
@@ -203,7 +202,7 @@ article .img_ {
   font-size: 14px;
   color: var(--color-gris-oscuro-proyecto);
   display: none;
-  padding: 3px 2px 1px 2px
+  padding: 3px 2px 1px 2px;
 }
 
 .truck {
@@ -219,11 +218,11 @@ article .img_ {
   position: absolute;
   right: 20px;
   top: -15px;
-  transition: all 2s
+  transition: all 2s;
 }
 
-.truck:hover{
-  transform:rotate(360deg)
+.truck:hover {
+  transform: rotate(360deg);
 }
 
 article .descripcion {
@@ -234,9 +233,7 @@ article .descripcion {
   border-top: 1px solid #ebebeb;
   position: relative;
   padding: 15px;
-  
 }
-
 
 /*? ================FOOTER================= */
 
@@ -245,24 +242,22 @@ footer {
   padding: 20px 20px 20px 20px;
   text-align: center;
   width: 100%;
-  margin: auto
+  margin: auto;
 }
 
-footer .footer-container{
+footer .footer-container {
   max-width: 100%;
 }
 
-
-footer .footer-container .pagos-footer{
-  padding: 15px
+footer .footer-container .pagos-footer {
+  padding: 15px;
 }
-footer .footer-container .seguridad-footer{
-  padding: 15px
+footer .footer-container .seguridad-footer {
+  padding: 15px;
 }
-footer .footer-container .envios-footer{
-  padding: 15px
+footer .footer-container .envios-footer {
+  padding: 15px;
 }
-
 
 .tarjeta {
   color: var(--color-celeste-proyecto);
@@ -282,134 +277,116 @@ footer .footer-container .envios-footer{
   margin-bottom: 20px;
 }
 
-.text1{
-  font-weight: bold; 
+.text1 {
+  font-weight: bold;
   font-size: 16px;
   padding: 0px 15px 15px 15px;
-  color: var(--color-gris-oscuro-proyecto)
-
+  color: var(--color-gris-oscuro-proyecto);
 }
 
-.text2{
-font-size: 14px;
-color: var(--color-gris-oscuro-proyecto);
-padding-bottom: 15px;
+.text2 {
+  font-size: 14px;
+  color: var(--color-gris-oscuro-proyecto);
+  padding-bottom: 15px;
 }
-
 
 /*? ================COPY================= */
 
-
-.copyright{
+.copyright {
   width: 100%;
   padding: 15px;
   background-color: white;
   text-align: center;
   box-shadow: 0px 0px 5px var(--color-gris-claro-proyecto);
-  
-  
 }
 
-.copy-text p{
-  font-size:12px;
-  color: #c9c9c9
+.copy-text p {
+  font-size: 12px;
+  color: #c9c9c9;
 }
 
-.copy-text a{
+.copy-text a {
   color: #acacac;
   text-decoration: none;
-  font-weight: bold
-  
+  font-weight: bold;
 }
-
-
-
 
 /*? ================MEDIA================= */
 
-@media (min-width: 361px){
-
-  main .detalle-prod{
-      display: block;
+@media (min-width: 361px) {
+  main .detalle-prod {
+    display: block;
   }
 
-  main .producto{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-      
+  main .producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
-  main section div.lista-productos{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
+  main section div.lista-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  
-  main .lista-productos .producto{
-      width: 45%;
+
+  main .lista-productos .producto {
+    width: 45%;
   }
 
   .precio,
-  .off{
-      width: 50%;
+  .off {
+    width: 50%;
   }
-  
 }
 
+@media (min-width: 769px) {
+  main .lista-productos .producto {
+    width: 22%;
+  }
+  .detalle-prod {
+    display: flex;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .detalle-prod:hover {
+    opacity: 1;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 1s;
+  }
+  main section article:hover {
+    box-shadow: 0px 0px 30px rgb(100, 100, 100);
+  }
 
-@media (min-width: 769px){
-
-
-  main .lista-productos .producto{
-      width: 22%;
-  }
-  .detalle-prod{
-      display:flex;
-      opacity: 0;
-      transition: all 0.5s;
-  }
-  .detalle-prod:hover{
-      opacity: 1;
-  }
-  main section article{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-      transition: all 1s
-      
-  }
-  main section article:hover{
-      box-shadow: 0px 0px 30px rgb(100, 100, 100);
-      
-  }
-  
   footer .footer-container {
     display: flex;
-    align-items:center;
+    align-items: center;
   }
   header div.top-header p {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
 }
-}
-
 
 @media (max-width: 769px) {
   div.top-header {
-      justify-content: center;
+    justify-content: center;
   }
   header div.top-header p {
-      width: 100%;
+    width: 100%;
   }
   header div.logo {
-      width: 50%;
-      margin: 0;
+    width: 40%;
+    margin: 0;
   }
   header .form {
-      width: 50%;
+    width: 50%;
   }
   nav.navbar-options {
-      display: none;
+    display: none;
   }
   div.burger-menu {
-      display: block;
+    display: block;
   }
 }
