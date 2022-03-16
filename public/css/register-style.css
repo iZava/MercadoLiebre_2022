@@ -1,5 +1,5 @@
 :root {
-  --color-amarillo-meli: #eac926;
+  --color-amarillo-meli: #fff157;;
   --color-azul-proyecto: #03264c;
   --color-celeste-proyecto: #1259c3;
   --color-gris-oscuro-proyecto: #666;
@@ -260,18 +260,20 @@ footer .footer-container .envios-footer {
   padding: 15px;
   background-color: white;
   text-align: center;
-  box-shadow: 0px 0px 5px var(--color-gris-claro-proyecto)
+  box-shadow: 0px 0px 5px var(--color-gris-claro-proyecto);
   
 }
 
-.copy-text,
-a {
-  color: var(--color-gris-oscuro-proyecto);
-  text-decoration: none;
+.copy-text p{
+  font-size:12px;
+  color: #c9c9c9
 }
 
-.copy-text a {
-  font-weight: bold;
+.copy-text a{
+  color: #acacac;
+  text-decoration: none;
+  font-weight: bold
+  
 }
 
 /*? ================MEDIA================= */
