@@ -39,77 +39,114 @@ p {
 
 /*? ================HEADER================= */
 
+div.top-header {
+  display: flex;
+  /* flexbox */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flexbox */
+  padding-top: 1rem;
+  padding: 1rem;
+}
+
+header div.top-header p {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
 
 header {
   background-color: var(--color-amarillo-meli);
-  padding: 15px;
 }
 
-header .header-container {
+header div.logo {
+  width: 25%;
+}
+
+header .form {
+  /* flexbox */
   display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-}
-
-header .header-container p {
-  width: 100%;
-  text-align: left;
-  margin-top: 10px;
-  color: var(--color-gris-oscuro-proyecto);
-}
-
-
-
-nav .lista-1, .lista-2{
-  display:none;
-  
-}
-
-
-header .logo-meli {
-  width: 70%;
-  padding: 10px;
-}
-
-header .barra-busqueda {
-  width: 50%;
   align-items: center;
-  font-size: 14px;
-  border: solid 1px var(--color-gris-oscuro-proyecto);
-  outline: none;
-  padding: 5px 15px;
-  border-radius: 10px;
-  border: 2px solid lightgrey;
+  /* flexbox */
+  width: 30%;
+  padding: 2px;
+  font-size: 11px;
 }
 
 header nav {
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 20px;
 }
 
-header ul {
+header ul li {
   list-style-type: none;
 }
 
-header a {
+header ul li a {
   text-decoration: none;
-  color: var(--color-gris-oscuro-proyecto);
-}
-.burguer-menu {
-  text-align: center;
-  padding: 15px;
-}
-.burguer-menu i {
-  padding: 8px;
-  background-color: var(--color-celeste-proyecto);
-  border-radius: 5px;
-  margin: auto 0;
-  display: inline;
+  color: black;
 }
 
-.burguer-menu i:hover {
-  background-color: darkblue;
+header .form .input {
+  background-color: white;
+  border: 1px solid black;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  width: 100%;
+  margin-left: 1rem;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: .5rem;
 }
+
+header .fa-search {
+  cursor: pointer;
+}
+
+header .form .submit {
+  background-color: white;
+  border: 1px solid black;
+  color: #666;
+  width: 10%;
+}
+
+nav.navbar-options {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+nav.navbar-options ul {
+  display: flex;
+  gap: 1rem;
+}
+
+div.burger-menu {
+  text-align: center;
+  display: none;
+}
+
+div.burger-menu i {
+  background-color: var(--color-celeste-proyecto);
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+  transition: background-color 0.5s
+}
+
+div.burger-menu i:hover{
+    background-color: var(--color-azul-proyecto)
+  }
 
 
 
@@ -163,9 +200,10 @@ article .img_ {
 }
 
 .detalle-prod {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-gris-oscuro-proyecto);
   display: none;
+  padding: 3px 2px 1px 2px
 }
 
 .truck {
@@ -265,8 +303,9 @@ padding-bottom: 15px;
 .copyright{
   width: 100%;
   padding: 15px;
-  background-color: var(--color-amarillo-meli);
+  background-color: white;
   text-align: center;
+  box-shadow: 0px 0px 5px var(--color-gris-claro-proyecto)
   
 }
 
@@ -286,10 +325,6 @@ padding-bottom: 15px;
 /*? ================MEDIA================= */
 
 @media (min-width: 361px){
-
-  nav .lista-1, .lista-2{
-    display: none;
-  }
 
   main .detalle-prod{
       display: block;
@@ -319,15 +354,9 @@ padding-bottom: 15px;
   
 }
 
+
 @media (min-width: 769px){
 
-  nav .lista-1, .lista-2{
-    display: block;
-  }
-
-  .burguer-menu{
-    display:none;
-  }
 
   main .lista-productos .producto{
       width: 22%;
@@ -353,5 +382,31 @@ padding-bottom: 15px;
   footer .footer-container {
     display: flex;
     align-items:center;
+  }
+  header div.top-header p {
+    font-size: .8rem;
+}
+}
+
+
+@media (max-width: 769px) {
+  div.top-header {
+      justify-content: center;
+  }
+  header div.top-header p {
+      width: 100%;
+  }
+  header div.logo {
+      width: 50%;
+      margin: 0;
+  }
+  header .form {
+      width: 50%;
+  }
+  nav.navbar-options {
+      display: none;
+  }
+  div.burger-menu {
+      display: block;
   }
 }
