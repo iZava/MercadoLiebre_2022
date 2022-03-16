@@ -33,4 +33,4 @@ app.get("/register", (req, res) => res.sendFile(path.join(__dirname, "views","re
 
 
 
-app.listen(port, () => console.log("estoy funcionando en el puerto " + port));
+app.listen(PORT, () => console.log("estoy funcionando en el puerto " + port));
